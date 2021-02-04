@@ -1,0 +1,60 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Raleway', sans-serif;
+}
+
+.display-font {
+	font-family: 'Major Mono Display', monospace;
+}
+
+.linear-text-style {
+	background: linear-gradient(to bottom right, #456aba, #982539);
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	-webkit-background-clip: text;
+}
+.linear-text-style2 {
+	background: linear-gradient(to bottom right, #982539, #456aba);
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	-webkit-background-clip: text;
+}
+
+.linear-p1 {
+	background: #456aba;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	-webkit-background-clip: text;
+}
+
+.linear-p2 {
+	background: linear-gradient(to bottom right, #456aba, #75426f);
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	-webkit-background-clip: text;
+}
+
+.linear-p3 {
+	background: linear-gradient(to bottom right, #595c9f, #7a3d62);
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	-webkit-background-clip: text;
+}
+
+.linear-p4 {
+	background: linear-gradient(to bottom right, #65558f, #863858);
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	-webkit-background-clip: text;
+}
+.linear-p5 {
+	background: #714a7c;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	-webkit-background-clip: text;
+}
