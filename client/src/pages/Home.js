@@ -21,7 +21,7 @@ const Home = ({ navOpen }) => {
 						animate={navOpen ? 'animate' : 'exit'}
 						initial={false}
 					>
-						<span className="linear-text-style">LauRyNas Rup.</span>
+						<span className="linear-text-style">LauRyNas Rupainis.</span>
 					</StyledName>
 				</motion.div>
 				<motion.div
