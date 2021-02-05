@@ -32,6 +32,7 @@ const ProjectModal = ({ modal, setModal }) => {
 					layoutId={`img ${modal.modalId}`}
 					src={mobileVideo ? current.media.mobileVid : current.media.desktopVid}
 					mobileVideo={mobileVideo}
+					poster={current.media.img}
 				/>
 				<motion.p
 					className="name linear-text-style"

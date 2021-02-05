@@ -6,7 +6,7 @@ import { motion, AnimateSharedLayout } from 'framer-motion';
 // Icons
 import { BsFillPlayFill, BsPauseFill } from 'react-icons/bs';
 
-const VideoPlayer = ({ src, mobileVideo }) => {
+const VideoPlayer = ({ src, mobileVideo, poster }) => {
 	// State to display controls
 	const [showControls, setShowControls] = useState(false);
 	// State to control & display icons
@@ -53,8 +53,7 @@ const VideoPlayer = ({ src, mobileVideo }) => {
 					muted={true}
 					autoPlay={true}
 					onEnded={endVideoHandler}
-					playsinline
-					controls
+					poster={poster}
 				/>
 			</OuterCont>
 		</AnimateSharedLayout>
