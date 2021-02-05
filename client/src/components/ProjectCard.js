@@ -39,13 +39,21 @@ const Card = styled(motion.div)`
 		font-weight: 300;
 	}
 	p.name {
-		font-size: 20px;
+		font-size: 1.25rem;
 		padding: 1.5rem 0rem;
-		font-weight: bolder;
+		font-weight: 300;
+		@media (max-width: 650px) {
+			/* font-weight: lighter; */
+		}
 	}
+
 	p.desc {
-		font-size: 16px;
+		font-size: 1rem;
+		@media (max-width: 650px) {
+			font-size: 0.9rem;
+		}
 	}
+
 	a {
 		text-decoration: none;
 	}
