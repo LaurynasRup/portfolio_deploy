@@ -2,9 +2,9 @@ const express = require('express');
 const mongoose = require('mongoose');
 const dotenv = require('dotenv').config();
 const cors = require('cors');
+const path = require('path');
 
 const app = express();
-const port = process.env.PORT || 5000;
 app.use(cors());
 app.use(express.json());
 
@@ -22,6 +22,18 @@ mongoose.connect(
 
 // Use routes
 app.use('/messages', messages);
+
+// serve static assets if in production
+if (process.env.NODE_ENV === 'production') {
+	// set static folder
+	app.use(express.static('client/build'));
+
+	app.get('*', (req, res) => {
+		res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
+	});
+}
+
+const port = process.env.PORT || 5000;
 
 // Run Server
 app.listen(port, () => {
