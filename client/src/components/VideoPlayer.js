@@ -53,6 +53,7 @@ const VideoPlayer = ({ src, mobileVideo }) => {
 					muted={true}
 					autoPlay={true}
 					onEnded={endVideoHandler}
+					playsinline
 				/>
 			</OuterCont>
 		</AnimateSharedLayout>
