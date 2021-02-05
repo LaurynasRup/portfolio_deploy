@@ -75,10 +75,6 @@ const ContactForm = ({ navOpen }) => {
 	};
 	// Post message
 	const postMsg = async (data) => {
-		const headers = {
-			'Content-Type': 'application/json',
-			'Access-Control-Allow-Origin': '*',
-		};
 		try {
 			await axios.post('/messages', data);
 			// Update sent messsage state
@@ -147,13 +143,25 @@ const ContactForm = ({ navOpen }) => {
 							</button>
 						</StyledForm>
 						<SocialCont>
-							<a href="/" target="_blank" rel="noopener noreferrer">
+							<a
+								href="https://www.linkedin.com/in/laurynas-rupainis-620334125/"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
 								<LinkedInIcon />
 							</a>
-							<a href="/" target="_blank" rel="noopener noreferrer">
+							<a
+								href="https://twitter.com/LaurynasRup"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
 								<TwitterIcon />
 							</a>
-							<a href="/" target="_blank" rel="noopener noreferrer">
+							<a
+								href="https://www.facebook.com/laurynas.rup/"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
 								<FBIcon />
 							</a>
 						</SocialCont>
@@ -206,7 +214,7 @@ const Container = styled(motion.div)`
 		padding-bottom: 2rem;
 		@media (max-width: 650px) {
 			font-size: 1.2rem;
-			padding-bottom: 1.5rem;
+			padding-bottom: 1rem;
 		}
 	}
 	p.msg-sent {
@@ -236,7 +244,7 @@ const StyledForm = styled.form`
 	align-items: center;
 	padding-bottom: 2.5rem;
 	@media (max-width: 650px) {
-		padding-bottom: 2rem;
+		padding-bottom: 1.5rem;
 	}
 	.input-wrap {
 		background: transparent;
@@ -270,10 +278,17 @@ const StyledForm = styled.form`
 		&:focus {
 			outline: none;
 		}
+		@media (max-width: 650px) {
+			padding: 0.3rem 1.2rem;
+			font-size: 0.75rem;
+		}
 	}
 	.form-input.text {
 		resize: none;
 		height: 98%;
+		@media (max-width: 650px) {
+			padding: 0.6rem 1.2rem;
+		}
 	}
 	.submit-btn {
 		margin: 0.5rem 0rem;
