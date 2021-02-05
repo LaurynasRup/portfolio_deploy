@@ -80,10 +80,7 @@ const ContactForm = ({ navOpen }) => {
 			'Access-Control-Allow-Origin': '*',
 		};
 		try {
-			await axios.post(
-				'https://lr-portfolio-backend.herokuapp.com/messages',
-				data
-			);
+			await axios.post('/messages', data);
 			// Update sent messsage state
 			setIsMsgSent(true);
 		} catch (err) {
