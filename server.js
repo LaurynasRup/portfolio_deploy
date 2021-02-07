@@ -3,10 +3,13 @@ const mongoose = require('mongoose');
 const dotenv = require('dotenv').config();
 const cors = require('cors');
 const path = require('path');
+import sslRedirect from 'heroku-ssl-redirect';
 
 const app = express();
 app.use(cors());
 app.use(express.json());
+// enable ssl redirect
+app.use(sslRedirect());
 
 // Require routes file
 const messages = require('./routes/messages');
