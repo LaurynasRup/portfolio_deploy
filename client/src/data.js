@@ -16,7 +16,7 @@ export const projectsData = [
 		},
 		links: {
 			github: 'https://github.com/LaurynasRup/beer_matcher',
-			live: '',
+			live: 'https://beer-and-meal.herokuapp.com/',
 		},
 	},
 	{
@@ -36,7 +36,7 @@ export const projectsData = [
 		},
 		links: {
 			github: 'https://github.com/LaurynasRup/ruppo_restaurant',
-			live: '',
+			live: 'https://ruppo-restaurant.herokuapp.com',
 		},
 	},
 	{
@@ -45,7 +45,7 @@ export const projectsData = [
 		shortDesc:
 			'A full stack app which allows user to track favoutite football leagues, see current standings, previous results and upcomimg fixtures.',
 		longDesc:
-			'This is a full stack multi-page web-application. Client side is built with JS, CSS & HTML and bundled with Webpack. The server side is built with Node JS, Express & MySql. The app includes encrypted sign up and login features and allows user to store footbal leagues to their account. It provides data of current league table, scores of previous matches and schedule of upcominig fixtures, all retrieved from an external API. ',
+			'This is a full stack multi-page web-app. Client side is built with JS, CSS & HTML and bundled with Webpack. Server side is built with Node JS, Express & MongoDB. The app includes encrypted sign up and login features and allows user to store footbal leagues to their account. It provides data of current league table, scores of previous matches and schedule of upcominig fixtures, all retrieved from an external API. ',
 		media: {
 			img:
 				'https://res.cloudinary.com/laurynasrup/image/upload/f_auto,q_auto:best/v1612529880/Portfolio%20Images/FootballTrckr_hmuq5c.png',
@@ -56,7 +56,7 @@ export const projectsData = [
 		},
 		links: {
 			github: 'https://github.com/LaurynasRup/trckr',
-			live: '',
+			live: 'https://my-football-trckr.netlify.app',
 		},
 	},
 	{
@@ -76,7 +76,7 @@ export const projectsData = [
 		},
 		links: {
 			github: 'https://github.com/LaurynasRup/planted/tree/master/planted',
-			live: '',
+			live: 'https://planted-eshop.herokuapp.com',
 		},
 	},
 ];
@@ -84,7 +84,7 @@ export const projectsData = [
 export const textData = [
 	`Hi,`,
 	`I am Laurynas Rupainis, a London\nbased front-end web developer.`,
-	`Started developer journey in early\n2020 and have been passionate\nabout it ever since.`,
+	`Started my developer journey in\nearly 2020 and have been\npassionate about it ever since.`,
 	`I currently enjoy building client side\nprojects and expanding my skill-set\nto become a full stack dev.`,
 	`Tech I use:`,
 ];

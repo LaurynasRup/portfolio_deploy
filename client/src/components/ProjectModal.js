@@ -52,7 +52,14 @@ const ProjectModal = ({ modal, setModal }) => {
 					>
 						Github
 					</a>
-					<div className="btn">Live</div>
+					<a
+						className="btn btn-link"
+						href={current.links.live}
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						Live
+					</a>
 					<div className="btn" onClick={mobileHandler}>
 						{mobileVideo ? 'Desktop' : 'Mobile'}
 					</div>

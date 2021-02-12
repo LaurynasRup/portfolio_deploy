@@ -44,10 +44,10 @@ const TextType = ({ typingDoneHandler }) => {
 						// Increase text count to display next text
 						setTextCount(textCount + 1);
 					}
-				}, 35);
+				}, 30);
 				// clear interval
 				return () => clearInterval(timer);
-			}, 2000);
+			}, 1200);
 			return () => clearTimeout(delay);
 		}
 	};
