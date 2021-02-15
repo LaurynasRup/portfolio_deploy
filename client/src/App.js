@@ -58,7 +58,11 @@ const App = () => {
 						<Home navOpen={navOpen} />
 					</Route>
 					<Route path="/about" exact>
-						<About navOpen={navOpen} aboutVisited={aboutVisited} />
+						<About
+							navOpen={navOpen}
+							aboutVisited={aboutVisited}
+							setShowLogo={setShowLogo}
+						/>
 					</Route>
 					<Route path="/projects" exact>
 						<Projects navOpen={navOpen} setShowLogo={setShowLogo} />

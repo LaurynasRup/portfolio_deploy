@@ -85,6 +85,6 @@ export const textData = [
 	`Hi,`,
 	`I am Laurynas Rupainis, a London\nbased front-end web developer.`,
 	`Started my developer journey in\nearly 2020 and have been\npassionate about it ever since.`,
-	`I currently enjoy building client side\nprojects and expanding my skill-set\nto become a full stack dev.`,
+	`I currently enjoy building client\nside projects and expanding my\nskill-set to become a full stack dev.`,
 	`Tech I use:`,
 ];

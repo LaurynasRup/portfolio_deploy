@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 // Components
 import AboutTop from '../components/AboutTop';
 import AboutBotttom from '../components/AboutBottom';
@@ -9,14 +9,16 @@ import { leftEntryAnim } from '../animation';
 // Styled
 import styled from 'styled-components';
 
-const About = ({ navOpen, aboutVisited }) => {
+const About = ({ navOpen, aboutVisited, setShowLogo }) => {
 	// State for dev icons
 	const [devIcons, setDevIcons] = useState({
 		icons: 1,
 		show: false,
 	});
-	// state
+	// Count if page visited
 	const [count, setCount] = useState(false);
+	// ref value for photo position
+	const photoRef = useRef(null);
 
 	// Handle typing end
 	const typingDoneHandler = () => {
@@ -33,12 +35,22 @@ const About = ({ navOpen, aboutVisited }) => {
 		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, []);
 
+	const scrollHandler = () => {
+		const yPosition = photoRef.current.getClientRects()[0].y;
+		if (yPosition < 63) {
+			setShowLogo(false);
+		} else {
+			setShowLogo(true);
+		}
+	};
+
 	return (
 		<MainContainer
 			variants={leftEntryAnim}
 			initial="init"
 			animate="anim"
 			exit="exit"
+			onScroll={scrollHandler}
 		>
 			<AboutTop
 				devIcons={devIcons}
@@ -48,6 +60,8 @@ const About = ({ navOpen, aboutVisited }) => {
 				setCount={setCount}
 				typingDoneHandler={typingDoneHandler}
 				aboutVisited={aboutVisited}
+				setShowLogo={setShowLogo}
+				photoRef={photoRef}
 			/>
 			<AboutBotttom
 				devIcons={devIcons}
