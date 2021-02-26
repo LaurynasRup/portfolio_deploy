@@ -8,8 +8,7 @@ const Logo = ({ navOpen, navHandler, showLogo }) => {
 			className="display-font"
 			showLogo={showLogo}
 		>
-			<StyledLetter navOpen={navOpen}>L</StyledLetter>
-			<StyledLetter navOpen={navOpen}>R</StyledLetter>
+			<StyledLetter navOpen={navOpen}>LR</StyledLetter>
 			<StyledDot navOpen={navOpen}>.</StyledDot>
 		</StyledLogo>
 	);
@@ -25,13 +24,6 @@ const StyledLogo = styled.p`
 	z-index: 15;
 	opacity: ${({ showLogo }) => (showLogo ? 1 : 0)};
 	transition: opacity 0.2s ease;
-	.letter-1,
-	.letter-2 {
-		color: #9d1a30;
-	}
-	.dot {
-		color: #456aba;
-	}
 `;
 const StyledLetter = styled.span`
 	color: ${(props) => (props.navOpen ? '#456aba' : '#9d1a30')};

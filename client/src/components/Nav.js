@@ -122,7 +122,6 @@ const StyledList = styled(motion.ul)`
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	/* background: rgba(0, 0, 0, 0.1); */
 	backdrop-filter: blur(30px);
 	z-index: 10;
 	@media (max-width: 450px) {

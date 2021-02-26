@@ -54,8 +54,6 @@ const StyledCont = styled(motion.div)`
 	.text {
 		display: flex;
 		flex-direction: column;
-		/* width: 75%; */
-		/* background: grey; */
 	}
 `;
 
@@ -64,7 +62,6 @@ const StyledName = styled(motion.p)`
 	padding-right: 6rem;
 	@media (max-width: 1100px) {
 		font-size: 4rem;
-		/* padding-right: 4rem; */
 	}
 	@media (max-width: 750px) {
 		font-size: 2rem;

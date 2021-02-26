@@ -72,8 +72,6 @@ const TopCont = styled(motion.div)`
 			background: rgba(0, 0, 0, 0.2);
 		}
 		@media (max-width: 1000px) {
-			/* height: 250px;
-			width: 250px; */
 			margin: 0.5rem;
 		}
 		@media (max-width: 700px) {
@@ -108,26 +106,11 @@ const DescriptionCont = styled(motion.div)`
 				font-size: 1.3rem;
 			}
 		}
-		@media (max-width: 1000px) {
-			/* padding-bottom: 0.8rem; */
-			/* font-size: 1rem; */
-		}
 		@media (max-width: 700px) {
 			padding-bottom: 0.8rem;
 			font-size: 1rem;
 		}
-		/* 
-		@media (orientation: landscape) and (max-width: 900px) {
-			font-size: 0.9rem;
-			padding-bottom: 0.8rem;
-			line-height: 0.9rem;
-		} */
 	}
-	/* @media (max-width: 1000px) {
-		height: 250px;
-		width: 320px;
-		margin: 0.5rem;
-	} */
 	@media (max-width: 700px) {
 		height: auto;
 		width: 300px;
