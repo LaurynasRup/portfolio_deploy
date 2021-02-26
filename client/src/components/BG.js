@@ -1,13 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
-import BgImage from '../img/bg.jpg';
 
 export const BG = () => {
-	return <Background BgImage={BgImage}></Background>;
+	return <Background />;
 };
 
 const Background = styled.div`
-	background: url(${(props) => props.BgImage}) top left no-repeat;
+	background: url('https://res.cloudinary.com/laurynasrup/image/upload/f_auto,q_auto:eco/v1612529871/Portfolio%20Images/bg_bckf8q.jpg')
+		top left no-repeat;
 	background-size: cover;
 	position: absolute;
 	width: 100%;
