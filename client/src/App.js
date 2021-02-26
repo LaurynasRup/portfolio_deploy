@@ -14,8 +14,10 @@ import Projects from './pages/Projects';
 import Contact from './pages/Contact';
 
 const App = () => {
+	//get with of the current scree
+	const screenWidth = window.innerWidth;
 	// Track if nav is open
-	const [navOpen, setNavOpen] = useState(false);
+	const [navOpen, setNavOpen] = useState(screenWidth > 450 ? true : false);
 	// Track if about page visited
 	const [aboutVisited, setAboutVisited] = useState({
 		visited: false,
@@ -51,7 +53,11 @@ const App = () => {
 		<div className="App" style={{ overflow: 'hidden' }}>
 			<BG />
 			<Logo navOpen={navOpen} navHandler={navHandler} showLogo={showLogo} />
-			<Nav navOpen={navOpen} setNavOpen={setNavOpen} />
+			<Nav
+				navOpen={navOpen}
+				setNavOpen={setNavOpen}
+				screenWidth={screenWidth}
+			/>
 			<AnimatePresence exitBeforeEnter>
 				<Switch location={location} key={location.pathname}>
 					<Route path="/" exact>

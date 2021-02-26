@@ -9,17 +9,27 @@ import { motion, AnimatePresence } from 'framer-motion';
 // Nav Animation
 import { navAnim } from '../animation';
 
-const Nav = ({ navOpen, setNavOpen }) => {
+const Nav = ({ navOpen, setNavOpen, screenWidth }) => {
 	// Get location
 	const { pathname } = useLocation();
 
 	// Close nav on afrer 3s after path change
 	useEffect(() => {
-		setTimeout(() => {
-			if (navOpen) {
-				setNavOpen(!navOpen);
+		if (pathname !== '/') {
+			setTimeout(() => {
+				if (navOpen) {
+					setNavOpen(!navOpen);
+				}
+			}, 1000);
+		} else {
+			if (screenWidth < 450) {
+				setTimeout(() => {
+					if (navOpen) {
+						setNavOpen(!navOpen);
+					}
+				}, 1000);
 			}
-		}, 1000);
+		}
 		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [pathname]);
 
